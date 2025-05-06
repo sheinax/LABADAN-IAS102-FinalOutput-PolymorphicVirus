@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        .logo2 {
+    width: 40px;
+    cursor: pointer;
+    opacity: 1; /* Keep the logo visible */
+    border: 2px solid rgb(60, 160, 185);
+}
+     img {
+        border-radius: 35px;
+        cursor: pointer;
+        transition: filter 0.5s; 
+    }
+    
+    img:hover {
+        animation: spin 1s linear;
+        filter: brightness(150%);
+    }
+    
+    @keyframes spin {
+        100% {
+            transform: rotate(360deg);
+        }
+    }</style>
+</head>
+
+<body>
+
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRao9V9-_fJWDAz6nGKn7vaW0xz9IOqHRfFzEXmvyB-6-I-Btv0hd28_LHBBtrVbKI1LSQ&usqp=CAU" class = "logo2"><span class="animate" style="--1:1;"></span></a>
+
+        <div class="bx bx-menu-alt-right" id="menu-icon"><span class="animate" style="--1:2;"></span></div>
+
+        <nav class="navbar">
+          
+            <a href="#home" class="active">Home</a>
+            <a href="#discussion">Discussion</a>
+            <a href="#article">Article</a>
+            <a href="#reflection">Reflection</a>
+            <a href="#about">About</a>
+
+            <span class="active-nav"></span>
+            <span class="animate" style="--1:2;"></span>
+        </nav>
+    </header>
+    
+    <!-- home section design -->    
+    <section class="home show-animate" id="home">
+
+        <div class="home-content">
+
+        
+
+
+                <h1>Polymorphic Virus:</h1>
+
+            <div class="text-animate">
+              
+               
+                <p> A Changing Virus That Hides in Your Devices and Is Hard to Detect.
+           
+                </p>
+  
+            </div>
+            
+         
+
+        <br>
+
+            <div class="btn-box">
+                <a href="#discussion" class="btn" >Learn More</a>
+                <!-- <a href="#" class="btn" id="pauseButton">Pause</a> -->
+               
+            </div>
+           
+        </div>
+
+        <div class="home-sci">
+            <a href="https://www.facebook.com/sherwin12.valledor"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.tiktok.com/@sherwin.valledor?lang=en"><i class='bx bxl-tiktok'></i></a>
+            <a href="https://www.instagram.com/usaiaia/"><i class='bx bxl-instagram'></i></a>
+            <span class="animate" style="--1:6;"></span>
+        </div>
+
+        <div class="home-imgHover"></div>
+        <span class="animate home-img" style="--1:7;"></span>
+    </section>
+
+
+   <!-- discussion section design -->
+<section class="discussion" id="discussion">
+    <h3 class="heading">
+        What is <span>Polymorphic Virus?</span>
+        <span class="animate scroll" style="--1:1;"></span>
+    </h3>
+
+    <div class="about-content">
+        <div class="picture-img">
+            <img src="https://antivirus.comodo.com/blog/wp-content/uploads/2018/11/Polymorphic-Virus.png" alt="Polymorphic Virus">
+        </div>
+
+        <div class="discussion-text">
+            <p>
+                A <b> <span> polymorphic virus </span> </b>is a type of computer virus that changes its code every time it spreads or infects a new system. 
+                It does this to avoid being detected by antivirus software. Even though the virus keeps changing how it looks, 
+                it still does the same harmful things, like stealing data, damaging files, or slowing down your device. 
+            </p>
+
+            <br>
+
+      <div class="discussion-content">
+    <div class="discussion-img">
+        <img src="https://content.kaspersky-labs.com/se/com/content/en-global/images/repository/isc/2017-images/KSY-01-PolymorphicVirus/KSY-01-PolymorphicVirus.jpg" alt="Polymorphic Virus">
+    </div>
+
+
+    <div class="discussion-text">
+        <h3><span> How Does It Work?</span></h3>
+
+        <p>
+            Most antivirus programs look for known virus code, like a fingerprint.
+            But a polymorphic virus keeps changing its code (or "appearance") every time it infects a new file or computer.
+            This makes it hard for antivirus software to catch it because it doesn’t look the same every time.
+        </p>
+
+        <p>
+            The virus uses a special engine called a <b><span> polymorphic engine</span></b>.
+            This engine rewrites parts of the virus code each time it runs, but the virus still does the same job.
+        </p>
+    </div>
+</div>
+
+<br>  <br>  <br> 
+
+<div class="examples-section">
+    <h3><span>Example of a Polymorphic Virus</span></h3>
+
+    <!-- Example 1 -->
+    <div class="example">
+        <div class="text">
+            <h3 class="num"> 1. Storm Worm</h3>
+            <p>
+                🛡️ First appeared in 2007. <br>
+                🛡️ It spread through emails with titles like “230 dead as storm batters Europe.” <br>
+                🛡️ When people clicked on the link or file in the email, their computer got infected. <br>
+                🛡️ The virus changed its code every time it was sent to someone new, making it hard to stop. <br>
+            </p>
+        </div>
+        <div class="example-img">
+            <img src="https://www.hkcert.org/f/blog/197564/1200c630/43f1df06-deb7-42c3-adad-bddaabd2a616-rdp_spread_worms.jpg" alt="Storm Worm Virus">
+        </div>
+    </div>
+
+    <!-- Example 2 (Reversed) -->
+    <div class="example reverse">
+        <div class="text">
+            <h3 class="num">2. VirLock</h3>
+            <p>
+                🛡️ A polymorphic ransomware. <br>
+                🛡️ Locked the screen and demanded payment to unlock the device.   <br>
+                🛡️ Spread through shared apps and cloud storage. <br>
+                🛡️ It acted like a virus and ransomware at the same time. <br>
+              
+            </p>
+        </div>
+        <div class="example-img">
+            <img src="https://any.run/malware-trends/images/remtree.png" alt="Marburg Virus">
+        </div>
+    </div>
+</div>
+</section>
+   
+    <!-- skills section design -->
+    <section class="skills" id="discussion">
+        <!-- <h2 class="heading">My <span>Skills</span> <span class="animate scroll" style="--1:1;"></span></h2> -->
+    
+        <div class="skills-row">
+            <div class="skills-column">
+                <h3 class="title">Why Is It Dangerous?<span class="animate scroll" style="--1:2;"></span></h3>
+    
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <span> <h3>Hard to Detect: </h3> </span>
+                            <div class="para">It keeps changing, so antivirus software may not recognize it.</div>
+                        </div>
+    
+                        <div class="progress">
+                            <span> <h3>Spreads Quickly: </h3> </span>
+                            <div class="para">It can infect many systems through email, files, or downloads.</div>
+                        </div>
+    
+                        <div class="progress">
+                            <span> <h3>Steals Information: </h3> </span>
+                            <div class="para">It may take personal data like passwords or bank details.</div>
+                        </div>
+    
+                        <div class="progress">
+                            <span> <h3>Damages Devices: </h3> </span>
+                            <div class="para">It can corrupt files, slow down systems, or even make them crash.</div>
+                        </div>
+    
+                    </div>
+                    <span class="animate scroll" style="--1:3;"></span>
+                </div>
+            </div>
+    
+            <div class="skills-column">
+                <h3 class="title">How to Protect Yourself<span class="animate scroll" style="--1:5;"></span></h3>
+    
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <span> <h3>Use Updated Antivirus Software: </h3> </span>
+                            <div class="para"> Choose an antivirus that can detect new threats.</div>
+                        </div>
+    
+                        <div class="progress">
+                            <span> <h3>Don’t Open Suspicious Emails or Links: </h3> </span>
+                            <div class="para">Especially from unknown sources.</div>
+                        </div>
+    
+                        <div class="progress">
+                            <span> <h3>Keep Your Software Updated: </h3> </span>
+                            <div class="para">Always install security updates on your devices.</div>
+                        </div>
+    
+                        <div class="progress">
+                            <span> <h3>Back Up Your Files: </h3> </span>
+                            <div class="para">So you can recover them if your system gets infected.</div>
+                        </div>
+                    </div>
+                    <span class="animate scroll" style="--1:6;"></span>
+                </div>
+            </div>
+        </div>
+       </section>
+    
+
+    <!-- education section design -->
+    <section class="education" id="article">
+        <h2 class="heading">My <span>Journey</span><span class="animate scroll" style="--1:1;"></span></h2>
+
+        <div class="education-row">
+            <div class="education-column">
+                <h3 class="title">Education:Bata Days<span class="animate scroll" style="--1:2;"></span></h3>
+
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bx-calendar' ></i>2007-2009</div>
+                            <h3>Kinder</h3>
+                            <p>Nag skwela kog kinder didto sa kabina kauswagan.Cagayan De Oro City. Bright pakay ko dani na panahona ambot ngano bubu naron wtf hahahah chill kung unsay gusto e hilak ra taod taod nana dayon sa imong hands ang imong want ana mana.bata moment</p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bx-calendar' ></i>2009-2012</div>
+                            <h3>Elementary G1-G3</h3>
+                            <p>Nag skwela ko ani sa Bonbon Cagayan De Oro City.Academic Achiever pa ko ani choy Mtap pagani ni abot pas regional hahaha sa g2, tas batak sa plants vs zombies og tong mga mortal kombat mga tirada ba.</p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bx-calendar' ></i>2012-2016</div>
+                            <h3>Elementary G4-G6</h3>
+                            <p>Diri aww bubu na kay new friends, new skills shy type is me. tas addict nakay sa assult-fire bato og gta sali ra dalag codex sa cheats sa gta</p>
+                        </div>
+                    </div>
+                    <span class="animate scroll" style="--1:3;"></span>
+                </div>
+            </div>
+
+            <div class="education-column">
+                <h3 class="title">Education:Maas Days <span class="animate scroll" style="--1:5;"></span></h3>
+
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bx-calendar' ></i>2016-2020</div>
+                            <h3>High School</h3>
+                            <p>MNCHS akong skwelahan ani, nakatuon og uyab-uyab, guitar, kanta
+                                etc. Mostly best years as a student kay diri ang choy, you know what I mean na. aww champion pud day ko anis battle of the bands.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bx-calendar' ></i>2020-2023</div>
+                            <h3>Senior HighSchool</h3>
+                            <p>Aww pinaka wtf kay naras kwarto pundoha, wtf covid alang gekaon sad sa mga chinese ang kwaknit edi awa. Worst year kay di basta basta maka gawas tapos wala nanoon ka paso kay bawal lagi mogawas way nahitabo prom night hayst.</p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bx-calendar' ></i>2023-2024</div>
+                            <h3>College</h3>
+                            <p>Aww kini nga tuig nakatuon unsaon mag pa choy2 sa code alt z rana mga windows x uu dayon ba etry gani, bitaw ambot kong madala paba nig haplas nga course IT day kos GCC</p>
+                        </div>
+                    </div>
+                    <span class="animate scroll" style="--1:6;"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- skills section design -->
+   <section class="skills" id="reflection">
+    <!-- <h2 class="heading">My <span>Skills</span> <span class="animate scroll" style="--1:1;"></span></h2> -->
+
+    <div class="skills-row">
+        <div class="skills-column">
+            <h3 class="title">Why Is It Dangerous?<span class="animate scroll" style="--1:2;"></span></h3>
+
+            <div class="skills-box">
+                <div class="skills-content">
+                    <div class="progress">
+                        <span> <h3>Hard to Detect: </h3> </span>
+                        <div class="para">It keeps changing, so antivirus software may not recognize it.</div>
+                    </div>
+
+                    <div class="progress">
+                        <span> <h3>Spreads Quickly: </h3> </span>
+                        <div class="para">It can infect many systems through email, files, or downloads.</div>
+                    </div>
+
+                    <div class="progress">
+                        <span> <h3>Steals Information: </h3> </span>
+                        <div class="para">It may take personal data like passwords or bank details.</div>
+                    </div>
+
+                    <div class="progress">
+                        <span> <h3>Damages Devices: </h3> </span>
+                        <div class="para">It can corrupt files, slow down systems, or even make them crash.</div>
+                    </div>
+
+                </div>
+                <span class="animate scroll" style="--1:3;"></span>
+            </div>
+        </div>
+
+        <div class="skills-column">
+            <h3 class="title">How to Protect Yourself<span class="animate scroll" style="--1:5;"></span></h3>
+
+            <div class="skills-box">
+                <div class="skills-content">
+                    <div class="progress">
+                        <span> <h3>Use Updated Antivirus Software: </h3> </span>
+                        <div class="para"> Choose an antivirus that can detect new threats.</div>
+                    </div>
+
+                    <div class="progress">
+                        <span> <h3>Don’t Open Suspicious Emails or Links: </h3> </span>
+                        <div class="para">Especially from unknown sources.</div>
+                    </div>
+
+                    <div class="progress">
+                        <span> <h3>Keep Your Software Updated: </h3> </span>
+                        <div class="para">Always install security updates on your devices.</div>
+                    </div>
+
+                    <div class="progress">
+                        <span> <h3>Back Up Your Files: </h3> </span>
+                        <div class="para">So you can recover them if your system gets infected.</div>
+                    </div>
+                </div>
+                <span class="animate scroll" style="--1:6;"></span>
+            </div>
+        </div>
+    </div>
+   </section>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+        <h2 class="heading">About <span>Me</span><span class="animate scroll" style="--1:1;"></span></h2>
+
+        <div class="about-img">
+            <img src="about.jpg" alt="">
+            <span class="circle-spin"></span>
+            <span class="animate scroll" style="--1:2;"></span>
+        </div>
+
+        <div class="about-content">
+            <h3>Gcc BSiT StuDent<span class="animate scroll" style="--1:3;"></span></h3>
+            <p> Why are you here? You really wanna know me?</br>
+                Oh okay? you can call me Sher or kuya,</br> I'm currently 21 yrs old and yeah life sucks if your old na.</br>But we should keep it up and focus on our dreams until we reach them malay mo maabot mo. </br>Click Here to know my crush ayiie..
+                <span class="animate scroll" style="--1:4;"></span>
+            </p>
+
+        
+
+        </div>
+
+     
+    </section>
+    <!-- footer design -->
+   <footer class="footer">
+    <div class="footer-text">
+        <p>Copyright &copy; 2025. IAS 102 | All Rights Reserved.</p>
+
+        <span class="animate scroll" style="--1:1;"></span>
+    </div>
+
+    <div class="footer-iconTop">
+        <a href="#"><i class='bx bxs-chevron-up'></i></a>
+        
+        <span class="animate scroll" style="--1:3;"></span>
+    </div>
+</footer>
+
+<!-- 
+<script>
+    const playButton = document.getElementById('playButton');
+    const pauseButton = document.getElementById('pauseButton');
+    const audio = document.getElementById('myAudio');
+    let isMusicPlaying = false;
+
+    const isMusicPlayingBefore = localStorage.getItem('isMusicPlaying');
+    if (isMusicPlayingBefore === 'true') {
+        audio.play();
+        isMusicPlaying = true;
+    }
+
+    playButton.addEventListener('click', () => {
+        audio.play();
+        isMusicPlaying = true;
+        localStorage.setItem('isMusicPlaying', 'true');
+    });
+
+    pauseButton.addEventListener('click', () => {
+        audio.pause();
+        isMusicPlaying = false;
+        localStorage.setItem('isMusicPlaying', 'false');
+    });
+
+    function navigateToPage(pageURL) {
+        if (isMusicPlaying) {
+            alert("Please pause the music before navigating.");
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    window.addEventListener('beforeunload', () => {
+        localStorage.removeItem('isMusicPlaying');
+    });
+</script>
+
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script> -->
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
