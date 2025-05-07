@@ -1050,8 +1050,35 @@ section:nth-child(odd) .animate.scroll,
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-  
 
   .para{
     font-size: 15px;
   }
+
+
+  .year .link {
+    text-decoration: none;
+    color: var(--main-color);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.3s ease;
+}
+
+.year .link:hover {
+    color: skyblue;
+   
+}
+
+.year .link i {
+    font-size: 18px;
+}
+
+
+.reflection-content p {
+    line-height: 1.8;
+    font-size: 16px;
+    margin-bottom: 16px;
+    text-align: justify;
+}
+
