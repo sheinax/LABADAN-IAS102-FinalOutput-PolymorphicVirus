@@ -45,13 +45,13 @@ body {
 .header.sticky {
     background: var(--bg-color);
 }
-
 .logo {
     position: relative;
     font-size: 2.5rem;
     color: var(--text-color);
     font-weight: 600;
 }
+
 
 .navbar {
     position: relative;
@@ -82,15 +82,28 @@ section {
     min-height: 100vh;
     padding: 10rem 9% 2rem;
 }
-
-.home{
+.home {
+    position: relative;
     display: flex;
     align-items: center;
     padding: 0 9%;
     background: url(home.jpg) no-repeat;
     background-size: cover;
     background-position: center;
+    z-index: 1;
 }
+
+.home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust 0.5 for more/less darkness */
+    z-index: -1;
+}
+
 
 .home-content{
     max-width: 60rem;
@@ -121,7 +134,7 @@ section {
     -webkit-text-stroke: .7px var(--main-color);
     background-image: linear-gradient(var(--main-color), var(--main-color));
     background-repeat: no-repeat;
-    -webkit-background-clip: text;
+    /* -webkit-background-clip: text; */
     background-position: -33rem 0;
 }
 
@@ -295,18 +308,23 @@ span {
     width: 25rem;
     height: 25rem;
     border-radius: 50%;
+    overflow: hidden; /* Ensures anything outside the circle is clipped */
     display: flex;
     justify-content: center;
     align-items: center;    
+    background-color: #fff; /* Optional: background color inside the circle */
 }
 
 .about-img img {
-    width: 90%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the container without distortion */
     border-radius: 50%;
     border: .2rem solid var(--main-color);
 }
 
-.about-img .circle-spin {
+
+/* .about-img .circle-spin {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -319,7 +337,7 @@ span {
     border-left: .2rem solid var(--main-color);
     border-right: .2rem solid var(--main-color);
     animation: aboutSpinner 8s linear infinite;
-}
+} */
 
 .about-content {
     text-align: center;
@@ -1077,8 +1095,14 @@ section:nth-child(odd) .animate.scroll,
 
 .reflection-content p {
     line-height: 1.8;
-    font-size: 16px;
+    font-size: 15px;
     margin-bottom: 16px;
     text-align: justify;
 }
 
+.about-content p {
+    line-height: 1.8;
+    font-size: 15px;
+    margin-bottom: 16px;
+    text-align: justify;
+}
